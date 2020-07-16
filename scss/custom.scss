@@ -1,8 +1,40 @@
 // Your variable overrides
-$body-bg: #000;
+$body-bg: #0e1319;
 $body-color: white;
-$primary: hotpink;
-$font-family-base: Arial;
-
+$primary: white;
+$font-family-base: "Bebas Neue", cursive;
+// #D9D9DA
+// #2C3541
 // Include all Bootstrap
+
+.index_split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+.about_split_left {
+  height: 100%;
+  width: 30%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left {
+  left: 0;
+  background-color: #0e1319;
+}
+
+.right {
+  right: 0;
+  background-color: #fff;
+  color: #0e1319;
+}
+
 @import "../node_modules/bootstrap/scss/bootstrap";
