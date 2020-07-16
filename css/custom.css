@@ -1,17 +1,11 @@
 @charset "UTF-8";
-.index_split {
-  height: 100%;
-  width: 50%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  overflow-x: hidden;
-  padding-top: 20px;
+a:hover {
+  opacity: 0.7;
 }
 
-.about_split_left {
+.index {
   height: 100%;
-  width: 30%;
+  width: 50%;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -24,10 +18,39 @@
   background-color: #0e1319;
 }
 
+.left_box {
+  margin: 50px;
+}
+
+.right_box {
+  margin: 50px;
+}
+
 .right {
   right: 0;
   background-color: #fff;
-  color: #0e1319;
+}
+
+.navigation {
+  color: teal;
+  font-size: larger;
+}
+
+.social {
+  position: absolute;
+  bottom: 50vh;
+  font-size: larger;
+}
+
+.name_intro {
+  color: #fff;
+  position: absolute;
+  bottom: 50px;
+}
+
+p {
+  color: #2c3541;
+  margin: 1px;
 }
 
 /*!
