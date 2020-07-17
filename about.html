@@ -14,42 +14,65 @@
 
     <!-- Custom Bootstrap CSS -->
     <link rel="stylesheet" href="css/custom.css" />
+    <!-- Font Sheet -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Favicon Sheet -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
 
     <title>About me</title>
   </head>
   <body>
-    <section class="wrapper">
-      <dev class="left"></dev>
-      <dev class="right"></dev>
-    </section>
-
-    <!-- First draft
-
-      <div class="index_split left">
-        <div class="centered">
-          <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About me</a>
-            <a href="travels.html">Travels</a>
+    <div class="travels_left">
+      <div class="left_box">
+        <section class="navigation">
+          <nav class="nav flex-column">
+            <a style="color: #d9d9da;" href="index.html">Home</a>
+            <a style="color: #d9d9da;" href="about.html">About Me</a>
+            <a style="color: #d9d9da;" href="travels.html">Travels</a>
           </nav>
-          
-          <h2>About Me</h2>
-          <p>Some text.</p>
-        </div>
+        </section>
+
+        <section class="social">
+          <div class="nav flex-column">
+            <a
+              href="https://github.com/JonasImm"
+              class="fa fa-github"
+              style="color: #d9d9da; margin-bottom: 5px;"
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/jonas-imm-65217a124/"
+              class="fa fa-linkedin"
+              style="color: #d9d9da; margin-bottom: 5px;"
+            ></a>
+            <a
+              href="https://www.facebook.com/jonas.imm"
+              class="fa fa-facebook"
+              style="color: #d9d9da;"
+            ></a>
+          </div>
+        </section>
+
+        <section class="name_intro">
+          <h2>Jonas Imm</h2>
+          <p style="margin-bottom: 0;">Trainee Web Development</p>
+          <p style="margin-bottom: 0;">Travel Enthusiast</p>
+        </section>
       </div>
-      
-      <div class="index_split right">
-        <div class="centered">
-          <p>Some text here too.</p>
-        </div>
+    </div>
+
+    <div class="travels_right">
+      <div class="right_box">
+        <p>Some text here too.</p>
       </div>
-      
-      <div class="about_split_right">
-        <div class="centered">
-          <p>Some text here too.</p>
-        </div>
-      </div>
-    -->
+    </div>
+
+    <section class="about_image">
+      <img src="images/myself_3.png" alt="Old Picture of me" class="picture" />
+    </section>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

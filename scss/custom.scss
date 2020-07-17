@@ -11,29 +11,40 @@ a:hover {
   opacity: 0.7;
 }
 
-.index {
-  height: 100%;
-  width: 50%;
+.index_left {
   position: fixed;
-  z-index: 1;
-  top: 0;
-  overflow-x: hidden;
-  padding-top: 20px;
-}
-
-.left {
+  width: 50%;
   left: 0;
+  height: 100%;
   background-color: #0e1319;
 }
+
 .left_box {
   margin: 50px;
+  height: 100%;
+  position: relative;
 }
+
+.index_right {
+  position: fixed;
+  width: 50%;
+  left: 50%;
+  height: 100%;
+  background-color: #fff;
+}
+
 .right_box {
   margin: 50px;
+  height: 100%;
+  position: relative;
+  z-index: 10;
 }
-.right {
-  right: 0;
-  background-color: #fff;
+.right_box > p {
+  color: #d9d9da;
+  position: relative;
+  transform: rotate(90deg);
+  bottom: -45vh;
+  right: 0px;
 }
 
 .navigation {
@@ -43,22 +54,79 @@ a:hover {
 
 .social {
   position: absolute;
-  bottom: 50vh;
+  bottom: 50%;
   font-size: larger;
 }
 
 .name_intro {
   color: #fff;
   position: absolute;
-  bottom: 50px;
+  bottom: 100px;
+  z-index: 50;
+  margin-bottom: 50px;
 }
 p {
   color: #2c3541;
   margin: 1px;
 }
+
+.image {
+  margin: 0px;
+  height: 50%;
+}
 .picture {
-  margin: 0 0 0 0;
-  position: relative;
+  margin: 0;
+  position: absolute;
+  z-index: 200;
+  transform: scaleX(-1);
+  bottom: 0%;
+  left: 50vh;
+}
+
+.about_left {
+  position: fixed;
+  width: 30%;
+  left: 0;
+  height: 100%;
+  background-color: #0e1319 100px;
+  z-index: 10;
+}
+.about_right {
+  position: fixed;
+  width: 70%;
+  left: 30%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 10;
+}
+.about_myself {
+  position: absolute;
+  z-index: 100;
+  margin: 0 0 1px 0;
+}
+.inner1 {
+  margin: 50px;
+}
+.inner2 {
+  margin: 50px;
+  color: #2c3541;
+}
+
+.travels_left {
+  position: fixed;
+  width: 30%;
+  left: 0;
+  height: 100%;
+  background-color: #0e1319;
+  z-index: 10;
+}
+.travels_right {
+  position: fixed;
+  width: 70%;
+  left: 30%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 10;
 }
 
 @import "../node_modules/bootstrap/scss/bootstrap";
