@@ -4,7 +4,13 @@ main {
   z-index: 0;
 }
 
-a:hover {
+.navigation a:hover {
+  font-size: larger;
+  opacity: 0.7;
+}
+
+.social a:hover {
+  font-size: larger;
   opacity: 0.7;
 }
 
@@ -37,21 +43,11 @@ p {
   background-color: #fff;
 }
 
-.right_box {
-  padding-top: 10%;
-  padding-right: 10%;
-  padding-bottom: 10%;
-  height: 100%;
-  position: relative;
-  z-index: 10;
-}
-
 .phone {
   color: #d9d9da;
   position: absolute;
   transform: rotate(90deg);
   top: 43%;
-  bottom: 50%;
   z-index: 6000;
   right: 0px;
 }
@@ -83,53 +79,155 @@ p {
   width: 500px;
 }
 
-/*
+.picture {
+  margin: 0 auto;
+  position: absolute;
+  z-index: 30;
+  bottom: 0%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  filter: grayscale(100%);
+  transition: 1s ease;
+}
+
+.about_image img:hover {
+  opacity: 1 !important;
+  filter: grayscale(0%);
+  transition: 1s ease;
+}
+
+.image img:hover {
+  opacity: 1 !important;
+  filter: grayscale(0%);
+  transition: 1s ease;
+}
+
+/* ABOUT SECTION */
 .about_left {
   position: fixed;
   width: 30%;
   left: 0;
   height: 100%;
-  background-color: #0e1319 100px;
-  z-index: 10;
+  background-color: #0e1319;
 }
+
 .about_right {
   position: fixed;
   width: 70%;
   left: 30%;
   height: 100%;
   background-color: #fff;
-  z-index: 10;
-}
-.about_myself {
-  position: absolute;
-  z-index: 100;
-  margin: 0 0 1px 0;
-}
-.inner1 {
-  margin: 50px;
-}
-.inner2 {
-  margin: 50px;
-  color: #2c3541;
 }
 
-.travels_left {
-  position: fixed;
-  width: 30%;
-  left: 0;
-  height: 100%;
-  background-color: #0e1319;
-  z-index: 10;
+.about_image {
+  margin: 0 auto;
+  position: absolute;
+  z-index: 30;
+  transform: scaleX(-1);
+  bottom: 0%;
+  left: -45%;
+  right: 0;
+  width: 500px;
 }
-.travels_right {
-  position: fixed;
-  width: 70%;
-  left: 30%;
+
+.about_header {
+  color: #0e1319;
+  font-size: xx-large;
+}
+
+.about_underline {
+  color: #2c3541 !important;
+  font-size: smaller;
+  margin-bottom: 2em;
+}
+
+.article {
+  position: absolute;
+  color: #2c3541 !important;
+  font-size: larger;
+  left: 15%;
+  margin: 10%;
   height: 100%;
+  top: 50px;
+}
+
+.article2 {
+  position: absolute;
+  color: #d9d9da;
+  left: 15%;
+  margin: 10%;
+  top: 50%;
+}
+
+.dropbtn {
   background-color: #fff;
-  z-index: 10;
+  color: #2c3541;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
 }
-*/
+
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 1000px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #fff;
+  text-decoration: underline #2c3541;
+}
+
+.image_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 2%;
+  column-gap: 2%;
+  position: relative;
+  right: 0px;
+  top: 10%;
+  z-index: 5;
+  margin-left: 20%;
+  margin-right: 10%;
+}
+
+.image_wrapper img {
+  position: static;
+  width: 100%;
+}
+
+.image_wrapper img:hover {
+  transform: scale(1.2);
+}
+
+.travel_wrapper {
+  height: 100%;
+  position: absolut;
+  align-content: center;
+  justify-content: center;
+  top: 0px;
+  bottom: 1px;
+}
+
 /*!
  * Bootstrap v4.5.0 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
