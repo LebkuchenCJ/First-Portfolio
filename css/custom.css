@@ -1,6 +1,16 @@
 @charset "UTF-8";
+main {
+  position: static;
+  z-index: 0;
+}
+
 a:hover {
   opacity: 0.7;
+}
+
+p {
+  color: #2c3541;
+  margin: 1px;
 }
 
 .index_left {
@@ -12,7 +22,9 @@ a:hover {
 }
 
 .left_box {
-  margin: 50px;
+  padding-top: 10%;
+  padding-left: 10%;
+  padding-bottom: 10%;
   height: 100%;
   position: relative;
 }
@@ -26,27 +38,27 @@ a:hover {
 }
 
 .right_box {
-  margin: 50px;
+  padding-top: 10%;
+  padding-right: 10%;
+  padding-bottom: 10%;
   height: 100%;
   position: relative;
   z-index: 10;
 }
 
-.right_box > p {
+.phone {
   color: #d9d9da;
-  position: relative;
+  position: absolute;
   transform: rotate(90deg);
-  bottom: -45vh;
+  top: 43%;
+  bottom: 50%;
+  z-index: 6000;
   right: 0px;
-}
-
-.navigation {
-  color: teal;
-  font-size: larger;
 }
 
 .social {
   position: absolute;
+  top: 43%;
   bottom: 50%;
   font-size: larger;
 }
@@ -54,30 +66,24 @@ a:hover {
 .name_intro {
   color: #fff;
   position: absolute;
-  bottom: 100px;
+  bottom: 50px;
   z-index: 50;
-  margin-bottom: 50px;
-}
-
-p {
-  color: #2c3541;
-  margin: 1px;
+  transform: scaleZ(600);
+  left: 5%;
 }
 
 .image {
-  margin: 0px;
-  height: 50%;
-}
-
-.picture {
-  margin: 0;
+  margin: 0 auto;
   position: absolute;
-  z-index: 200;
+  z-index: 30;
   transform: scaleX(-1);
   bottom: 0%;
-  left: 50vh;
+  left: 0;
+  right: 0;
+  width: 500px;
 }
 
+/*
 .about_left {
   position: fixed;
   width: 30%;
@@ -86,7 +92,6 @@ p {
   background-color: #0e1319 100px;
   z-index: 10;
 }
-
 .about_right {
   position: fixed;
   width: 70%;
@@ -95,17 +100,14 @@ p {
   background-color: #fff;
   z-index: 10;
 }
-
 .about_myself {
   position: absolute;
   z-index: 100;
   margin: 0 0 1px 0;
 }
-
 .inner1 {
   margin: 50px;
 }
-
 .inner2 {
   margin: 50px;
   color: #2c3541;
@@ -119,7 +121,6 @@ p {
   background-color: #0e1319;
   z-index: 10;
 }
-
 .travels_right {
   position: fixed;
   width: 70%;
@@ -128,7 +129,7 @@ p {
   background-color: #fff;
   z-index: 10;
 }
-
+*/
 /*!
  * Bootstrap v4.5.0 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
