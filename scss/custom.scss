@@ -7,6 +7,297 @@ $font-family-base: "Bebas Neue", cursive;
 // #2C3541
 // Include all Bootstrap
 
+body {
+  height: 100vh;
+  width: 100vw;
+}
+p {
+  color: #2c3541;
+  margin: 1px;
+}
+main {
+  position: absolute;
+}
+
+// NAV BAR
+
+.nav_bar {
+  position: absolute;
+
+  height: 100%;
+  width: 40%;
+  padding: 5% 0 5% 5%;
+  z-index: 2;
+}
+.nav {
+  width: fit-content;
+}
+
+.name_intro {
+  bottom: 0%;
+  position: fixed;
+  margin-bottom: 5%;
+}
+.nav_bar a:hover {
+  font-size: larger;
+  opacity: 0.7;
+}
+.social a:hover {
+  font-size: larger;
+  opacity: 0.7;
+}
+
+.social {
+  position: fixed;
+  bottom: 50%;
+}
+
+// LEFT BOX
+
+.left_box {
+  background-color: #0e1319;
+  padding: 5%;
+  position: absolute;
+
+  height: 100%;
+  right: 50%;
+  left: 0%;
+}
+
+// RIGHT BOX
+
+.right_box {
+  background-color: #fff;
+  padding: 5%;
+
+  position: fixed;
+  height: 100%;
+  right: 0px;
+  left: 50%;
+}
+
+// FOOTER
+
+.contact {
+  position: absolute;
+  z-index: 5;
+  right: 0%;
+  height: 100%;
+  width: 10%;
+  padding: 5% 5% 5% 0;
+}
+
+.mail {
+  color: #d9d9da;
+  position: fixed;
+  font-size: larger;
+  right: 5%;
+  top: 7.5%;
+}
+
+.phone {
+  color: #d9d9da;
+  position: fixed;
+  right: 2%;
+  top: 40%;
+  transform: rotate(90deg);
+}
+
+// IMAGE
+
+.picture {
+  position: fixed;
+  bottom: 0%;
+  left: 33vw;
+  height: 80vh;
+  transition: 1s ease;
+  filter: grayscale(100%);
+}
+
+.picture:hover {
+  opacity: 1 !important;
+  filter: grayscale(0%);
+  transition: 1s ease;
+}
+
+// ABOUT SECTION
+
+.about_right_box {
+  background-color: #fff;
+  padding: 5%;
+
+  position: fixed;
+  height: 100%;
+  right: 0px;
+  left: 30%;
+}
+
+.about_picture {
+  position: fixed;
+  bottom: 0%;
+  right: 55%;
+  height: 80%;
+}
+
+.about_header {
+  color: #0e1319;
+  font-size: xx-large;
+}
+.about_underline {
+  color: #2c3541 !important;
+  font-size: smaller;
+  margin-bottom: 2em;
+}
+.article {
+  position: absolute;
+  color: #2c3541 !important;
+  font-size: larger;
+  left: 15%;
+  margin: 10%;
+  height: 100%;
+  top: 50px;
+}
+
+.dropbtn {
+  background-color: #fff;
+  color: #2c3541;
+  padding: 16px;
+  border: none;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 30%;
+  position: relative;
+  margin-bottom: 5%;
+}
+
+.dropdown {
+  position: absolute;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 30vw;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #fff;
+  text-decoration: underline #2c3541;
+}
+
+// TRAVELS SECTION
+
+.travel_right_box {
+  background-color: #fff;
+  padding: 5%;
+  position: fixed;
+  height: 100%;
+  right: 0px;
+  left: 30%;
+  overflow: scroll;
+}
+
+.image_wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  row-gap: 5px;
+  position: relative;
+  right: 0px;
+
+  margin-left: 20%;
+  margin-right: 10%;
+}
+.image_wrapper img {
+  position: static;
+  width: 100%;
+}
+.image_wrapper img:hover {
+  -webkit-filter: blur(5px);
+  transition: 1s;
+  display: block;
+}
+
+.IMG1 {
+  position: relative;
+}
+.IMG2 {
+  position: relative;
+}
+.IMG3 {
+  position: relative;
+}
+.IMG4 {
+  position: relative;
+}
+
+.IMG1:hover p {
+  display: block;
+}
+
+.IMG2:hover p {
+  display: block;
+}
+.IMG3:hover p {
+  display: block;
+}
+.IMG4:hover p {
+  display: block;
+}
+
+.IMG1 p {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  color: #d9d9da;
+  width: 100%;
+  padding: 20px;
+  margin: 0;
+  display: none;
+}
+.IMG2 p {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  color: #d9d9da;
+  width: 100%;
+  padding: 20px;
+  margin: 0;
+  display: none;
+}
+.IMG3 p {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  color: #d9d9da;
+  width: 100%;
+  padding: 20px;
+  margin: 0;
+  display: none;
+}
+.IMG4 p {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  color: #d9d9da;
+  width: 100%;
+  padding: 20px;
+  margin: 0;
+  display: none;
+}
+
+/*
+
 main {
   position: static;
   z-index: 0;
@@ -62,7 +353,6 @@ p {
   position: absolute;
   top: 43%;
   bottom: 50%;
-  font-size: larger;
 }
 
 .name_intro {
@@ -110,7 +400,7 @@ p {
   transition: 1s ease;
 }
 
-/* ABOUT SECTION */
+
 
 .about_left {
   position: fixed;
@@ -228,4 +518,5 @@ p {
   top: 0px;
   bottom: 1px;
 }
+*/
 @import "../node_modules/bootstrap/scss/bootstrap";
