@@ -52,7 +52,12 @@
           ></a>
         </div>
       </section>
-      <section class="name_intro">
+      <section id="name_intro" class="d-none d-sm-block">
+        <h2>Jonas Imm</h2>
+        <p style="margin-bottom: 0;">Trainee Web Development</p>
+        <p style="margin-bottom: 0;">Travel Enthusiast</p>
+      </section>
+      <section class="d-block d-sm-none" id="name_intro_mobile">
         <h2>Jonas Imm</h2>
         <p style="margin-bottom: 0;">Trainee Web Development</p>
         <p style="margin-bottom: 0;">Travel Enthusiast</p>
@@ -79,6 +84,7 @@
                 programming.
                  </p>
               </div>
+              <!--
               <div class="row">
                    <h3 class="skills">
                       Skills
@@ -95,7 +101,7 @@
                   <p class="p2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, minus aliquid doloribus possimus adipisci harum, recusandae amet earum consectetur cupiditate cumque nesciunt quo odit! Fugiat ex non quaerat soluta totam?</p>
                   <p class="p3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore dolor dignissimos ducimus veritatis quod enim amet. Iusto deleniti, laudantium cupiditate dolor dicta dolorum non minus voluptas sunt eum accusamus aperiam?</p>
                 </div>
-
+              -->
                 <!--
                     <div class="dropdown">
                       <button class="dropbtn">Skills</button>
@@ -144,7 +150,8 @@
           <img
               src="images/myself_bg2.png"
               alt="Old Picture of me"
-              class="about_picture"
+              id="about_picture"
+              class="d-none d-md-block"
           />
 
     </main>
@@ -154,7 +161,7 @@
         href="mailtto:jonas.imm@gmail.com"
                 class="mail"
       >&#9993</a>
-      <a href="tel:00491778754105" class="phone">+49 177 8754105</a>
+      <a href="tel:00491778754105" id="phone" class="d-none d-sm-block">+49 177 8754105</a>
     
     </footer>
 
