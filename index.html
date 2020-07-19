@@ -3,6 +3,10 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -10,13 +14,80 @@
 
     <!-- Custom Bootstrap CSS -->
     <link rel="stylesheet" href="css/custom.css" />
-
-    <title>Hello, world!</title>
+    <!-- Font Sheet -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Favicon Sheet -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <title>Jonas Imm</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
-    <button class="btn btn-primary">Click me</button>
+    <header class="nav_bar">
+      <nav class="nav flex-column">
+        <a style="color: #d9d9da;" href="index.html">Home</a>
+        <a style="color: #d9d9da;" href="about.html">About Me</a>
+        <a style="color: #d9d9da;" href="travels.html">Travels</a>
+      </nav>
+      <section class="social">
+        <div class="nav flex-column">
+          <a
+            href="https://github.com/JonasImm"
+            class="fa fa-github"
+            style="color: #d9d9da; margin-bottom: 5px;"
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/jonas-imm-65217a124/"
+            class="fa fa-linkedin"
+            style="color: #d9d9da; margin-bottom: 5px;"
+          ></a>
+          <a
+            href="https://www.facebook.com/jonas.imm"
+            class="fa fa-facebook"
+            style="color: #d9d9da;"
+          ></a>
+        </div>
+      </section>
+      <section id="name_intro" class="d-none d-sm-block">
+        <h2>Jonas Imm</h2>
+        <p style="margin-bottom: 0;">Trainee Web Development</p>
+        <p style="margin-bottom: 0;">Travel Enthusiast</p>
+      </section>
+      <section class="d-block d-sm-none" id="name_intro_mobile_index">
+        <h2>Jonas Imm</h2>
+        <p style="margin-bottom: 0; color: #d9d9da;">Trainee Web Development</p>
+        <p style="margin-bottom: 0; color: #d9d9da;">Travel Enthusiast</p>
+      </section>
+    </header>
+    <main>
+      <section class="left_box"></section>
+      <section class="right_box"></section>
+          <img
+              src="images/myself_bg2.png"
+              alt="Old Picture of me"
+              id="picture"
+              class="d-none d-md-block"
+          />
+          <img
+          src="images/myself_bg2.png"
+          alt="Old Picture of me"
+          id="picture_mobile"
+          class="d-block d-sm-none"
+      />
+
+    </main>
+    <footer class="contact">
+      <a
+        href="mailtto:jonas.imm@gmail.com"
+                class="mail"
+      >&#9993</a>
+      <a href="tel:00491778754105" id="phone" class="d-none d-sm-block">+49 177 8754105</a>
+    </footer>
+
     <!-- Optional JavaScript -->
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
