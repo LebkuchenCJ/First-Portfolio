@@ -66,17 +66,19 @@
     <main>
       <section class="left_box"></section>
       <section class="about_right_box">
+
+        <!-- TEXT ABOUT ME-->
+
           <article class="article">
               <div class="text">
                  <h2 class="about_header">Jonas Imm</h2>
                  <h3 class="about_underline">29 Jahre, Trainee Web-Design</h3>
-                 <p class="about_text" style="color: #2c3541;">
+                 <p class="about_text">
                 Hi! Thanks for stopping by and checking out my first project. In
                 the past years, I've been working in the F&B departments of
                 various hotels, from Germany to Myanmar. Now it's time for a
                 change. Currently enlisted in the Web Dev Bootcamp by
-                <a href="https://www.neuefische.de/" style="color: #2c3541;"
-                  >neue fische</a
+                <a href="https://www.neuefische.de/">neue fische</a
                   >
                 I'm looking forward to become a web developer by the end of
                 September. The first week is already passed and it already
@@ -84,75 +86,125 @@
                 programming.
                  </p>
               </div>
-              <!--
-              <div class="row">
-                   <h3 class="skills">
-                      Skills
-                    </h3>
-                    <h3 class="experience">
-                      Experience
-                    </h3>
-                    <h3 class="education">
-                      Education
-                    </h3>
-              </div>
-                <div class="info">
-                  <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus accusantium quis recusandae odit quasi incidunt commodi aspernatur hic ex. Ex quaerat eius quo dicta. Laborum accusantium voluptates labore mollitia culpa?</p>
-                  <p class="p2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, minus aliquid doloribus possimus adipisci harum, recusandae amet earum consectetur cupiditate cumque nesciunt quo odit! Fugiat ex non quaerat soluta totam?</p>
-                  <p class="p3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore dolor dignissimos ducimus veritatis quod enim amet. Iusto deleniti, laudantium cupiditate dolor dicta dolorum non minus voluptas sunt eum accusamus aperiam?</p>
+
+              <!-- SKILL SECTION -->
+
+              <div class="container" >
+                <ul class="nav nav-pills">
+                  <li class="active"><a href="#tab-1" data-toggle="tab" style="color: #2c3541">Skills</a></li>
+                  <li><a href="#tab-2" data-toggle="tab" style="color: #2c3541" >Experience</a></li>
+                  <li><a href="#tab-3" data-toggle="tab" style="color: #2c3541" >Education</a></li>
+                </ul>
+                <div class="tab-content well">
+                  <div class="tab-pane active" id="tab-1">
+                    <div class="card" >
+                      
+                      <div class="card-body">
+                        <h5 class="card-title">IT Skills</h5>
+                        <p class="card-text">HTML5, CSS3, JavaScript, SAP, Matrix POS, Office</p>
+                        
+                      </div>
+                    </div>
+                    <div class="card" >
+                       <div class="card-body" id="lang" >
+                        <h5 class="card-title">Languages</h5>
+
+                       <div class="lang">
+                        <p class="card-text">German</p> <p>(mother tongue)</p>
+                        <p class="card-text">English </p> <p>(very good knowledge in speaking and writing)
+                        </p>
+                        <p class="card-text">Spanish </p> <p>(basic speaking and writing skills)</p>
+                        <p class="card-text">French </p> <p>(basic speaking and writing skills)</p>
+                      </div>
+                      
+                    </div>  
+                    </div>  
+                  </div>
+                  <div class="tab-pane" id="tab-2">
+                    <table class="table" id="table">
+                      <tr class="row1">
+                        <td>06/2019 – 04/2020 </td>
+                        <td>Sabbatical leave</td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td class="intel">Canada & Latin America</td>
+                      </tr>
+                      <tr class="row1">
+                        <td>03/2019 – 06/2019</td>
+                        <td>BP GmbH Freiburg</td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td class="intel">Employee</td>
+                      </tr>
+                      <tr class="row1">
+                        <td>12/2017 – 12/2018</td>
+                        <td>Bayview – The Beach Resort, Ngapali, Myanmar</td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td class="intel">Assistant Resident Manager</td>
+                      </tr>
+                      <tr class="row1">
+                        <td>10/2015 - 10/2017</td>
+                        <td >25hours Hotel Vienna</td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td class="intel">F&B Assistant</td>
+                      </tr>
+                    
+                    </table>
+                  </div>
+                  <div class="tab-pane" id="tab-3">
+                    <table class="table" id="table">
+                      <tr class="row1">
+                        <td>07/2020 – (on-going)</td>
+                        <td>Neue Fische Bootcamp</td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td class="intel">web development course</td>
+                      </tr>
+                      <tr class="row1">
+                        <td>09/2012 – 06/2015</td>
+                        <td>RWB Bonn</td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td class="intel">vocational school, hotel industry expert</td>
+                      </tr>
+                      <tr class="row1">
+                        <td>10/2011 – 09/2012</td>
+                        <td>University of Bonn, Germany</td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td class="intel">Geography // cancelled</td>
+                      </tr>
+                      <tr class="row1">
+                        <td>09/2001 – 07/2010</td>
+                        <td >DHG Freiburg</td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td class="intel">grammar school, Abitur</td>
+                      </tr>
+                    
+                    </table>
+                  </div>
                 </div>
-              -->
-                <!--
-                    <div class="dropdown">
-                      <button class="dropbtn">Skills</button>
-                      <div class="dropdown-content">
-                        <p>
-                          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                          Et, voluptas provident ipsa, accusantium porro doloribus
-                          corrupti obcaecati eaque, vero error consequuntur!
-                          Voluptatem tempore unde cumque voluptate magni fugiat
-                          facilis ratione!
-                        </p>
-                      </div>
-                    </div>
-                    <div class="dropdown">
-                      <button class="dropbtn">Experience</button>
-                      <div class="dropdown-content">
-                        <p>
-                          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                          Et, voluptas provident ipsa, accusantium porro doloribus
-                          corrupti obcaecati eaque, vero error consequuntur!
-                          Voluptatem tempore unde cumque voluptate magni fugiat
-                          facilis ratione!
-                        </p>
-                      </div>
-                    </div>
-                    <div class="dropdown">
-                      <button class="dropbtn">Education</button>
-                      <div class="dropdown-content">
-                        <p>
-                          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                          Et, voluptas provident ipsa, accusantium porro doloribus
-                          corrupti obcaecati eaque, vero error consequuntur!
-                          Voluptatem tempore unde cumque voluptate magni fugiat
-                          facilis ratione!
-                        </p>
-                      </div>
-                    </div>
-                    -->
-              </div>
-            </article>
-          
-        
+              </div>    
+          </article>      
       </section>
       
-        
-          <img
-              src="images/myself_bg2.png"
-              alt="Old Picture of me"
-              id="about_picture"
-              class="d-none d-md-block"
-          />
+      <img
+       src="images/myself_bg2.png"
+       alt="Old Picture of me"
+       id="about_picture"
+       class="d-none d-md-block"
+      />
 
     </main>
     <footer class="contact">
